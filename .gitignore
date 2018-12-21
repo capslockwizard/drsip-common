@@ -115,3 +115,4 @@ pkg/
 
 # Ignore vscode folder
 .vscode/
+conda/

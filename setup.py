@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="drsip-common",
-    version="0.2",
+    version="0.3",
     author="Justin Chan",
     author_email="capslockwizard@gmail.com",
     description="Common DRSIP functions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
-    packages=setuptools.find_packages(),
+    url="https://github.com/capslockwizard/drsip-common",
+    packages=['drsip_common'],
     install_requires=['biopython', 'numpy'],
     classifiers=[
         "Environment :: Plugins",
