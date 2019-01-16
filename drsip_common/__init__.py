@@ -11,6 +11,8 @@ Functions
 
 .. autofunction:: get_best_fit_rot_mat
 """
+import os
+import errno
 import cStringIO
 from Bio.SVDSuperimposer import SVDSuperimposer
 
@@ -41,6 +43,14 @@ def get_best_fit_rot_mat(from_coord, to_coord):
     superimpose_inst.run()
 
     return superimpose_inst.get_rotran()[0].T
+
+def makedir(filename):
+
+    try:
+        os.makedirs(os.path.dirname(filename))
+    except OSError as e:
+        if e.errno != errno.EEXIST:
+            raise
 
 def convert_file_to_StrIO(filename):
 

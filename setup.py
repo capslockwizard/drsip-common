@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="drsip-common",
-    version="0.3",
+    version="0.4",
     author="Justin Chan",
     author_email="capslockwizard@gmail.com",
-    description="Common DRSIP functions",
+    description="Common helper functions for DR-SIP",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/capslockwizard/drsip-common",
@@ -21,5 +21,6 @@ setuptools.setup(
         "Programming Language :: Python :: 2.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
     ],
 )
