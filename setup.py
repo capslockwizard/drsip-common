@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="drsip-common",
-    version="0.4",
+    version="0.5",
     author="Justin Chan",
     author_email="capslockwizard@gmail.com",
     description="Common helper functions for DR-SIP",

@@ -46,11 +46,17 @@ def get_best_fit_rot_mat(from_coord, to_coord):
 
 def makedir(filename):
 
-    try:
-        os.makedirs(os.path.dirname(filename))
-    except OSError as e:
-        if e.errno != errno.EEXIST:
-            raise
+    dirname = os.path.dirname(filename)
+
+    if len(dirname) > 0:
+
+        try:
+            os.makedirs(dirname)
+
+        except OSError as e:
+
+            if e.errno != errno.EEXIST:
+                raise
 
 def convert_file_to_StrIO(filename):
 
